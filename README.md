@@ -28,6 +28,13 @@ export ARM_CLIENT_SECRET="seu-client-secret"
 export ARM_SUBSCRIPTION_ID="seu-subscription-id"
 export ARM_TENANT_ID="seu-tenant-id"
 
+Gere sua chave ssh
+Como Gerar um Par de Chaves SSH
+Para gerar um par de chaves SSH (chave pública e chave privada), você pode usar o comando ssh-keygen. Aqui está como fazer isso no terminal do seu sistema:
+ -ssh-keygen -t rsa -b 2048 -f chave_ssh
+
+No arquivo main.tf sustitua o nome do arquivo da chave ssh pulica pelo gerado pela sua maquina
+
 Execute o comando terraform init para inicializar o diretório do Terraform e baixar os plugins necessários:
 terraform init
 
